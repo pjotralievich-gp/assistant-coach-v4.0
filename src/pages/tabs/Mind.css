@@ -1,0 +1,7 @@
+
+.mind-root{display:flex;flex-direction:column;gap:10px}
+.chatbox{flex:1;min-height:260px;background:#1c2740;border-radius:10px;padding:14px;overflow:auto;box-shadow:inset 0 0 8px rgba(0,0,0,.3)}
+.msg{max-width:76%;padding:10px 12px;border-radius:10px;margin:8px 0}
+.msg.user{background:#2a4c84;color:#fff;margin-left:auto}
+.msg.ai{background:#0e1a3a;color:#cfe2ff;margin-right:auto}
+.inputrow{display:flex;gap:8px;align-items:center}

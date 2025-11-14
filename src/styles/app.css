@@ -1,0 +1,21 @@
+
+:root{
+  --bg:#071733; --bg2:#0a2147; --panel:#0d2a5a; --panel2:#123772;
+  --accent:#3b82f6; --accent-2:#60a5fa; --text:#e6eef8; --muted:#a8c7ff;
+  --card:#142c59; --card-2:#1b3b78;
+}
+*{box-sizing:border-box} html,body,#root{height:100%}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  background:linear-gradient(180deg,var(--bg2),var(--bg));color:var(--text)}
+a{color:var(--accent);text-decoration:none}
+button{font-family:inherit}
+.fade{animation:fade .25s ease} @keyframes fade{from{opacity:.6;transform:translateY(4px)}to{opacity:1;transform:none}}
+.input, select{background:#0e1a3a;border:1px solid #2b4c80;color:#fff;border-radius:8px;padding:10px 12px;font-size:1rem;outline:none;width:100%}
+.input:focus, select:focus{border-color:var(--accent)}
+.primary-btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:10px 16px;cursor:pointer;font-weight:600}
+.primary-btn:hover{background:var(--accent-2)}
+.secondary-btn{background:#173b7a;color:#fff;border:none;border-radius:8px;padding:10px 12px;cursor:pointer}
+.link-btn{background:transparent;border:none;color:var(--accent);cursor:pointer;padding:0}
+.small{font-size:.9rem;color:var(--muted)}
+footer.app-footer{margin-top:auto;text-align:center;color:#98b1e6;font-size:.85rem;padding:14px 8px;opacity:.9}
+.card{background:var(--card);border:1px solid #274c91;border-radius:12px;padding:16px}

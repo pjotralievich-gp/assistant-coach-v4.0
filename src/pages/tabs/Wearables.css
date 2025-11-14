@@ -1,0 +1,411 @@
+.wearables-container {
+  color: #e6eaff;
+  padding: 20px;
+}
+
+.tab-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: rgba(12, 20, 40, 0.85);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- ATHLETE ---------- */
+.device-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.device-card {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.device-card__title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.metric-large {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* ---------- КНОПКИ ---------- */
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #007aff, #005ad9);
+  color: white;
+}
+
+.btn.success {
+  background: linear-gradient(90deg, #2dd36f, #29b765);
+  color: white;
+}
+
+.btn.danger {
+  background: linear-gradient(90deg, #ff5f56, #d9362b);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ---------- TEAM DASHBOARD ---------- */
+.team-dashboard .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-header .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e6eaff;
+}
+
+/* Кнопки переключения */
+.segmented {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin: 0;
+}
+
+.segm-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 600;
+  color: #cfd8ff;
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.segm-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.segm-btn.active {
+  background: linear-gradient(90deg, #007aff, #005ad9);
+  color: #fff;
+  box-shadow: 0 0 6px rgba(0, 122, 255, 0.5);
+}
+
+/* ---------- Таблица ---------- */
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thead,
+.trow {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr 2fr;
+  align-items: center;
+}
+
+.thead {
+  font-weight: 600;
+  color: #9ab0ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 4px;
+}
+
+.trow {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.trow:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.zones-inline {
+  display: flex;
+  gap: 4px;
+}
+
+.zone {
+  font-size: 12px;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.z1 {
+  background: linear-gradient(90deg, #0ab6ff, #0b92e5);
+}
+.z2 {
+  background: linear-gradient(90deg, #2dd36f, #29b765);
+}
+.z3 {
+  background: linear-gradient(90deg, #ffbb33, #ff9f00);
+}
+.z4 {
+  background: linear-gradient(90deg, #ff5f56, #d9362b);
+}
+
+.chip.tiny {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
+.chip.ok {
+  background: linear-gradient(90deg, #2dd36f, #29b765);
+  color: #fff;
+}
+
+.empty-note {
+  text-align: center;
+  color: #94a3ff;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ---------- МОДАЛКА ---------- */
+.top-controls {
+  position: relative;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 55px; /* прямо под кнопкой ADD */
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 12px;
+  animation: fadeIn 0.25s ease;
+  z-index: 10;
+}
+
+.modal-card {
+  background: rgba(20, 28, 50, 0.98);
+  border-radius: 14px;
+  padding: 16px;
+  width: 400px;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  transform-origin: top center;
+  animation: dropIn 0.25s ease;
+}
+
+@keyframes dropIn {
+  from {
+    transform: scaleY(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.input:focus {
+  outline: 1px solid #007aff;
+}
+
+.zones-mini-title {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #b9c6ff;
+}
+
+.zones-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.zone-mini {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.zone-name {
+  min-width: 60px;
+  font-weight: 500;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* ---------- Анимации ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ---------- Убираем стрелки из number input ---------- */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* для Firefox */
+}
+
+/* Сделаем цифры чуть крупнее и по центру */
+.zone-mini input {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* ---------- Whole Team: сетка квадратных карточек ---------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 1 / 1; /* квадрат */
+  transition: transform .15s ease, background .2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.team-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.team-name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-hr {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 4px 0 2px;
+}
+.team-hr span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ab0ff;
+}
+
+.team-avg {
+  font-size: 12px;
+  color: #b1bdff;
+  margin-bottom: 6px;
+}
+
+/* мини-полосы зон */
+.zone-bars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  align-items: end;
+  margin-top: auto;
+}
+.zone-bars .bar {
+  height: 6px;
+  border-radius: 4px;
+  opacity: .9;
+}
+.zone-bars .bar.z1 {
+  background: linear-gradient(90deg,#0ab6ff,#0b92e5);
+}
+.zone-bars .bar.z2 {
+  background: linear-gradient(90deg,#2dd36f,#29b765);
+}
+.zone-bars .bar.z3 {
+  background: linear-gradient(90deg,#ffbb33,#ff9f00);
+}
+.zone-bars .bar.z4 {
+  background: linear-gradient(90deg,#ff5f56,#d9362b);
+}

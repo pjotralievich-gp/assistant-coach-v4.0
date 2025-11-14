@@ -1,0 +1,11 @@
+
+.medlab-root{display:flex;flex-direction:column;gap:10px}
+.medlab-chat-box{flex:1;min-height:260px;background:#1c2740;border-radius:10px;padding:16px;overflow:auto;box-shadow:inset 0 0 8px rgba(0,0,0,.3)}
+.medlab-message{max-width:76%;padding:10px 12px;border-radius:10px;margin:8px 0}
+.medlab-message.user{background:#2a4c84;color:#fff;margin-left:auto}
+.medlab-message.ai{background:#0e1a3a;color:#cfe2ff;margin-right:auto}
+.medlab-input-row{display:flex;gap:8px;align-items:center}
+.attach-button{background:#173b7a;border:none;border-radius:8px;padding:8px 10px;cursor:pointer;color:#fff}
+.medlab-input{flex:1;background:#0e1a3a;color:#fff;border:1px solid #2b4c80;border-radius:8px;padding:10px 12px}
+.send-button{background:#3b82f6;color:#fff;border:none;border-radius:8px;padding:10px 16px;cursor:pointer;font-weight:600}
+.send-button:hover{background:#60a5fa}

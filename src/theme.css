@@ -1,0 +1,76 @@
+/* ====== BASE THEME STRUCTURE (CSS VARIABLES) ====== */
+
+:root {
+  /* Default Theme (Dark) — если тема не выбрана */
+  --bg-main: #141B2E;
+  --bg-sidebar: #0F1628;
+
+  --text-main: #DCE6FF;
+  --text-secondary: #A8B5D8;
+
+  --tab-active: #3C82FF;
+  --tab-inactive: #8EA4D1;
+
+  --card-bg: rgba(255,255,255,0.06);
+  --card-border: rgba(255,255,255,0.08);
+
+  --transition-fast: 0.25s ease;
+}
+
+/* ====== DARK THEME ====== */
+[data-theme="dark"] {
+  --bg-main: #141B2E;
+  --bg-sidebar: #0F1628;
+
+  --text-main: #DCE6FF;
+  --text-secondary: #A8B5D8;
+
+  --tab-active: #3C82FF;
+  --tab-inactive: #8EA4D1;
+
+  --card-bg: rgba(255,255,255,0.06);
+  --card-border: rgba(255,255,255,0.08);
+}
+
+/* ====== LIGHT THEME ====== */
+[data-theme="light"] {
+  --bg-main: #E8ECF7;
+  --bg-sidebar: #DCE2F1;
+
+  --text-main: #1D2333;
+  --text-secondary: #3A4054;
+
+  --tab-active: #2E6BFF;
+  --tab-inactive: #7A84A7;
+
+  --card-bg: rgba(255,255,255,0.55);
+  --card-border: rgba(0,0,0,0.06);
+}
+
+/* ====== MILK THEME (молочная, мягкая, нейтральная) ====== */
+[data-theme="milk"] {
+  --bg-main: #F4F5F7;
+  --bg-sidebar: #E6E7EB;
+
+  --text-main: #1F1F24;
+  --text-secondary: #4A4A55;
+
+  --tab-active: #3C73FF;
+  --tab-inactive: #9CA3B5;
+
+  --card-bg: rgba(255,255,255,0.7);
+  --card-border: rgba(0,0,0,0.08);
+}
+
+/* ====== GLOBAL TRANSITIONS ====== */
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transition: var(--transition-fast);
+}

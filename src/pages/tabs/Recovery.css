@@ -1,0 +1,375 @@
+.recovery-container {
+  color: #cfe2ff;
+  padding: 20px 26px 26px;
+}
+
+/* Общие карточки */
+.card {
+  background: rgba(7, 12, 30, 0.85);
+  border-radius: 14px;
+  padding: 16px 18px;
+  border: 1px solid rgba(120, 150, 255, 0.18);
+}
+
+.lbl {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(120, 150, 255, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  padding: 6px 10px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: rgba(100, 140, 255, 0.5);
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.06);
+  color: #e5e7eb;
+}
+
+.btn.primary {
+  background: #316bff;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #4a82ff;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* title */
+
+.tab-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #cfe2ff;
+  margin: 4px 0 14px;
+}
+
+.analytics-title {
+  margin-top: 0;
+}
+
+/* ================= ANALYTICS TOP CONTROLS ================= */
+
+.analytics-top-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.mode-and-dates {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* switch Single / Period / Compare */
+
+.mode-switch {
+  display: inline-flex;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.mode-btn {
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.mode-btn.active {
+  background: #2563eb;
+  color: #f9fafb;
+}
+
+/* GRAPHICS button */
+
+.graphics-btn {
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #f9fafb;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.45);
+}
+
+/* ================= ANALYTICS CHART AREA ================= */
+
+.analytics-charts-card {
+  margin-top: 8px;
+  padding: 14px 16px 16px;
+}
+
+.charts-board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.charts-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.charts-subtitle {
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+.charts-note {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.charts-empty {
+  font-size: 13px;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* сетка для самих графиков */
+
+.charts-grid-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.chart-block {
+  border-radius: 12px;
+  padding: 10px 12px 8px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+}
+
+.chart-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #e5e7eb;
+}
+
+/* ================= GRAPHICS MODAL ================= */
+
+.charts-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+}
+
+.charts-modal {
+  width: 360px;
+  max-width: 90%;
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+  color: #e5e7eb;
+}
+
+[data-theme='light'] .charts-modal {
+  background: rgba(248, 250, 252, 0.98);
+  color: #111827;
+}
+
+.charts-modal-title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.charts-modal-sub {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.charts-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.charts-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.charts-check input {
+  width: 16px;
+  height: 16px;
+}
+
+.charts-modal-close {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+/* ================= CALENDAR MODAL (iOS STYLE) ================= */
+
+.calendar-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 65;
+}
+
+.calendar-modal {
+  width: 360px;
+  max-width: 90%;
+  border-radius: 22px;
+  padding: 18px 18px 16px;
+  background: rgba(17, 24, 39, 0.97);
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7);
+  color: #e5e7eb;
+}
+
+[data-theme='light'] .calendar-modal {
+  background: rgba(255, 255, 255, 0.98);
+  color: #111827;
+}
+
+.calendar-modal-title {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calendar-fields-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.calendar-field label {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+[data-theme='light'] .calendar-field label {
+  color: #6b7280;
+}
+
+.calendar-modal-apply {
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+/* ===== адаптация под светлую тему ===== */
+
+[data-theme='light'] .recovery-container {
+  color: #0f172a;
+}
+
+[data-theme='light'] .card {
+  background: rgba(248, 250, 252, 0.96);
+  border-color: rgba(148, 163, 184, 0.6);
+}
+
+[data-theme='light'] .input {
+  background: rgba(255, 255, 255, 0.95);
+  color: #111827;
+}
+
+[data-theme='light'] .chart-block {
+  background: #f9fafb;
+  border-color: rgba(148, 163, 184, 0.6);
+}
+
+[data-theme='light'] .chart-title {
+  color: #111827;
+}
+
+[data-theme='light'] .charts-note {
+  color: #6b7280;
+}
+
+/* твой фикс для подъёма Recovery под header */
+
+.recovery-container {
+  padding-top: 0 !important;
+  margin-top: -85px !important;
+}
+/* Кнопки Save / Clear — компактные */
+.recovery-btn-small {
+  width: 70px;              /* было широкое — делаем компактнее */
+  padding: 6px 0;
+  font-size: 13px;
+}
+/* Светлый приятный фон в Athlete Inputs */
+.recovery-container .input {
+  background: rgba(255, 245, 220, 0.12);  /* тёплый золотисто-молочный полупрозрачный */
+  border: 1px solid rgba(255, 245, 220, 0.25);
+}
+
+.recovery-container .input:focus {
+  border-color: rgba(255, 245, 220, 0.45);
+}
