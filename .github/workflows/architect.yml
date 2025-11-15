@@ -1,4 +1,5 @@
 name: Architect Agent
+
 on:
   workflow_dispatch:
 
@@ -7,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -19,8 +20,8 @@ jobs:
         run: npm install
 
       - name: Run Architect Agent
-        uses: openai/assistant-actions@v1
+        uses: openai/openai-assistant-action@v1
         with:
-          assistant_id: ${{ asst_gj7jQY7BLcjT0hGh1Wyye4A3 }}
-          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          assistant_id: "asst_gj7jQY7BLcjT0hGh1Wyye4A3"
+          api_key: ${{ secrets.OPENAI_API_KEY }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
