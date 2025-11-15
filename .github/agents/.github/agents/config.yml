@@ -1,0 +1,9 @@
+schema-version: v1
+
+agents:
+  architect:
+    enabled: true
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
