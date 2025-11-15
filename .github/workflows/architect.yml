@@ -21,6 +21,6 @@ jobs:
       - name: Run Architect Agent
         uses: openai/assistant-actions@v1
         with:
-          assistant_id: ${{ secrets.ASSISTANT_ID }}
+          assistant_id: ${{ asst_gj7jQY7BLcjT0hGh1Wyye4A3 }}
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
