@@ -1,0 +1,24 @@
+name: Architect Agent
+on:
+  workflow_dispatch:
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install deps
+        run: npm install
+
+      - name: Run Architect Agent
+        uses: openai/ai-actions@main
+        with:
+          model: gpt-4o-mini
+          instructions_path: .github/agents/architect.yml
