@@ -5,8 +5,9 @@ on:
 jobs:
   run-agent:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -18,7 +19,8 @@ jobs:
         run: npm install
 
       - name: Run Architect Agent
-        uses: openai/ai-actions@main
+        uses: openai/assistant-actions@v1
         with:
-          model: gpt-4o-mini
-          instructions_path: .github/agents/architect.yml
+          assistant_id: ${{ asst_gj7jQY7BLcjT0hGh1Wyye4A3 }}
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
